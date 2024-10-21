@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "70b589a3-328e-4bb5-af6b-acc96f2ba3a2",
+		"name": "simple-llm-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27796700"
+	},
+	"item": [
+		{
+			"name": "Post Journal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"date\": \"2024-10-21\",\n  \"mood\": \"sad\",\n  \"description\": \"i feel unmotivated\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/journal",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"journal"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
