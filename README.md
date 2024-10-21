@@ -1,6 +1,6 @@
 # PM Coding - Simple LLM App Task
 
-Access Link: [simple-journaling-app.vercel.app](https://simple-journaling-c5nun7dis-dhiyarisalahg-gls-projects.vercel.app) 
+Access Link: [simple-journaling-app.vercel.app](https://simple-journaling-app.vercel.app) 
 
 ## Backend
 URL: https://backend-simple-llm-journal.vercel.app/
