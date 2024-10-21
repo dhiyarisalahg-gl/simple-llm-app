@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "513dc90f-5445-43b6-81e2-38e6a6ea7a86",
+		"name": "deployed-simple-llm-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27796700"
+	},
+	"item": [
+		{
+			"name": "Deployed Post Journal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"date\": \"2024-10-21\",\n  \"mood\": \"string\",\n  \"description\": \"string\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://backend-simple-llm-journal.vercel.app/journal",
+					"protocol": "https",
+					"host": [
+						"backend-simple-llm-journal",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"journal"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
