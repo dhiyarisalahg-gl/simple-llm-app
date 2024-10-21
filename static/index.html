@@ -133,14 +133,24 @@
     </div>
     <script>
         async function submitJournal() {
+            const date = document.getElementById('date').value;
+            const mood = document.getElementById('mood').value;
+            const description = document.getElementById('description').value;
+        
+            if (!date || !mood || !description) {
+                alert('Please fill in all fields.');
+                return; // Stop the function if validation fails
+            }
+        
             const modal = document.getElementById("myModal");
             const span = document.getElementsByClassName("close")[0];
             const url = 'https://app-backend-owgwpdbky-dhiyarisalahg-gls-projects.vercel.app/journal';
             const data = {
-                date: document.getElementById('date').value,
-                mood: document.getElementById('mood').value,
-                description: document.getElementById('description').value
+                date: date,
+                mood: mood,
+                description: description
             };
+        
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {
@@ -160,7 +170,7 @@
                     modal.style.display = "none";
                 }
             };
-        }
+        }        
     </script>
 </body>
 </html>
